@@ -1,0 +1,8 @@
+.contenedorGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40rem auto auto;
+    grid-template-areas: "head head"
+                         "main   main"
+                         "footer footer";
+}

@@ -1,0 +1,286 @@
+// @media (max-width: 991px) {
+//     //Reseteo
+//     .decoracionTitulo {
+//         width: 100%;
+//     }
+//     // Nav Header
+//     .buscador {
+//         width: 100%;
+//     }
+
+//     
+
+    
+//     // Pagina Nosotros
+//     .nosotros__info {
+//         flex-direction: column;
+//     }
+
+//     .nosotros {
+//         width: 90%;
+
+//         .nosotros__info {
+//             .informacion {
+//                 width: 100%;
+//                 margin-bottom: 2.5rem;
+
+//             }
+
+//             .imagen {
+//                 width: 100%;
+//             }
+//         }
+//     }
+
+//     .ordenUno {
+//         order: 1;
+//     }
+
+//     .ordenDos {
+//         order: 2;
+//     }
+
+//     .satisfaccionClientes {
+//         background-color: $colorFondoDos;
+//         width: 100%;
+//         height: auto;
+//         padding: 5rem 0;
+//         margin-top: 7rem;
+//         border-radius: 0.5rem;
+
+//         .satisfaccionClientes__clientesFelices {
+//             text-align: center;
+//             margin-bottom: 2.5rem;
+//         }
+
+//         .satisfaccionClientes__opiniones {
+//             flex-direction: column;
+//             width: 100%;
+
+//             .opinion {
+//                 width: 32rem;
+//                 margin: 2.5rem auto;
+//             }
+//         }
+//     }
+
+//     .clientesFelices__titulo::after,
+//     .clientesFelices__titulo::before {
+//         content: '';
+//         position: absolute;
+//         width: 6.10rem;
+//         height: 0.10rem;
+//         background-color: currentColor;
+//         top: 2rem;
+//     }
+
+//     .clientesFelices__titulo::after {
+//         right: -10.10rem;
+//     }
+
+//     .clientesFelices__titulo::before {
+//         left: -10.10rem;
+//     }
+
+//     // Pagina Preguntas Frecuentes
+//     .encabezadoFaqs h1 {
+//         top: 28rem;
+//     }
+
+//     .cuerpoFaqs {
+//         .contenedorFaqs {
+//             .faqs {
+//                 flex-direction: column;
+
+//                 .faqs__logo {
+//                     margin-bottom: 2.5rem;
+//                 }
+//             }
+//         }
+
+//         .preguntas {
+//             .stock {
+//                 width: 20rem;
+//             }
+
+//             .cambios {
+//                 width: 20rem;
+//             }
+
+//             .envios {
+//                 width: 20rem;
+//             }
+
+//             .pagos {
+//                 width: 20rem;
+//             }
+
+//             .otras {
+//                 width: 20rem;
+//             }
+//         }
+
+//         .stock::after,
+//         .stock::before,
+//         .cambios::after,
+//         .cambios::before,
+//         .envios::after,
+//         .envios::before,
+//         .pagos::after,
+//         .pagos::before,
+//         .otras::after,
+//         .otras::before {
+//             width: 5.5rem;
+//         }
+
+//         .stock::after,
+//         .cambios::after,
+//         .envios::after,
+//         .pagos::after,
+//         .otras::after {
+//             right: -7.5rem;
+//         }
+
+//         .stock::before,
+//         .cambios::before,
+//         .envios::before,
+//         .pagos::before,
+//         .otras::before {
+//             left: -7.5rem;
+//         }
+//     }
+//     // Pagina Contactos
+//     .cuerpoContacto {
+//         .contacto {
+//             width: 20rem;
+//         }
+
+//         .formulario {
+//             width: 90%;
+//         }
+//     }
+
+//     .contacto::after,
+//     .contacto::before {
+//         width: 6.75rem;
+//     }
+
+//     .contacto::after {
+//         right: -8.75rem;
+//     }
+
+//     .contacto::before {
+//         left: -8.75rem;
+//     }
+
+//     
+    
+//     
+// }
+
+@media (min-width: 991px) {
+    // Grid
+    .contenedorGrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 40rem auto 10rem;
+        grid-template-areas: "head head head head"
+                             "main   main   main   main"
+                             "footer footer footer footer";
+    }
+    // Header
+    .buscador {
+        width: 18rem;
+    }
+    .headerPaginasFaqs {
+        .contenedorH1 {
+            h1 {
+                top: 33rem;
+            }
+        }
+    }
+    // Página Tienda
+    .infoTienda {
+        p {
+            width: 80%;
+        }
+    }
+    .contenedorZapatillas {
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-around;
+        margin-top: 5rem;
+        .producto{
+            @include propiedadesGenerales ($colorFondo, 25rem, auto, 0rem);
+        }
+    }
+    // Main Preguntas Frecuentes
+    .cuerpoFaqs {
+        .navegacionFaqs {
+            flex-direction: row;
+            justify-content: space-between;
+            .navegacionFaqs__logo {
+                &:last-child {
+                    margin-bottom: 2.5rem;
+                }
+            }
+        }
+        .preguntas {
+            width: 80%;
+        }
+    }
+    // Decoracion Titulos
+    .contenedorTitulo{
+        width: 70%;
+        .titulo{
+            flex: 50%;
+        }
+        .antes,
+        .despues {
+            flex: 25%;
+        }
+    }
+    // Main Contacto
+.cuerpoContacto {
+    .formulario {
+        width: 50%;
+    }
+}
+    // Footer
+    .pie {
+        .redes {
+            border-right: 0.15rem solid $colorFondo;
+            border-left: none;
+            border-top: none;
+            border-bottom: none;
+        }
+        .copyright {
+            border-left: 0.15rem solid $colorFondo;
+            border-right: none;
+            border-top: none;
+            border-bottom: none;
+            
+        }
+    }
+}
+
+
+
+
+ 
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+
+

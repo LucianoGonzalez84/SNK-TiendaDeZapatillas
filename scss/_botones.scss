@@ -1,0 +1,81 @@
+.botonContacto {
+    @include propiedadesGenerales($colorFondo, 13rem, 4rem, 0.5rem);
+    font-size: map-get($boton, altoFuente);
+    font-weight: map-get($boton, espesorFuente);
+    font-family: map-get($boton, fuente);
+    cursor: map-get($boton, tipoCursor);
+    border: map-get($boton, borde);
+    transition: map-get($boton, transicion);
+    padding: map-get($boton, padding);
+    color: $colorPrincipal;
+    
+    &:hover {
+        background: $colorPrincipal;
+        color: $colorFondo;
+    }
+}
+
+.botonTienda {
+    @extend .botonContacto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $colorPrincipal;
+    border-radius: 0;
+    &:hover {
+        background: $colorPrincipal;
+        color: $colorFondo;
+    }
+    i {
+        transform: scale(1.5);
+        margin-right: 1rem;
+    }
+}
+
+.botonBuscador {
+    @extend .botonContacto;
+    width: 4rem;
+    font-size: 1.5rem;
+    background-color: $colorFondo;
+    color: $colorHover;
+    border: 0.2rem solid $colorHover  !important;
+
+    i {
+        font-size: 1.5rem;
+    }
+
+    &:hover {
+        background-color: $colorHover;
+        color: $colorFondo;
+    }
+}
+
+.botonArriba {
+    @extend .botonContacto;
+    height: 4rem;
+    width: 4rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+
+    i {
+        color: $colorPrincipal;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    &:hover {
+        background-color: $colorPrincipal;
+    }
+
+    &:hover i {
+        color: $colorFondo
+    }
+}

@@ -1,0 +1,93 @@
+// Header Index
+.headerIndex {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+    .contenedorH1 {
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            top: 20rem;
+        }
+    }
+}
+
+// Header Paginas
+.headerPaginas {
+    background-position: center;
+    background-size: cover;
+    grid-area: head;
+
+    .contenedorH1 {
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            top: 33rem;
+        }
+
+    }
+}
+
+.headerPaginasFaqs {
+    background-position: center;
+    background-size: cover;
+    grid-area: head;
+
+    .contenedorH1 {
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            top: 28rem;
+        }
+    }
+}
+
+// Nav
+.navbar {
+    background-color: $colorPrincipal;
+    opacity: 80%;
+    color: $colorFondo;
+
+    .navbar-toggler {
+        color: white;
+        border-color: white;
+        margin-right: 1.5rem;
+        width: 4.5rem;
+        height: 4.5rem;
+
+        .fa-bars {
+            color: $colorFondo;
+            transform: scale(7);
+            margin-top: 0.5rem;
+        }
+    }
+
+    .nav-link {
+        color: $colorFondo  !important;
+        font-family: $tipoFuenteSubtitulos;
+        font-size: 1.9rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
+
+.buscador {
+    width: 100%;
+    background-color: $colorPrincipal;
+    opacity: 80%;
+
+    .buscador__input {
+        width: 100%;
+        font-family: $tipoFuenteSubtitulos;
+        font-size: 1.35rem;
+        background-color: $colorFondo;
+        padding-left: 0.4rem;
+        padding-right: 0.4rem !important;
+        margin-right: 0.3rem !important;
+    }
+}

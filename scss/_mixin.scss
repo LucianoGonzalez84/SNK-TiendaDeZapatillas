@@ -1,0 +1,6 @@
+@mixin propiedadesGenerales ($bg-color, $ancho, $alto, $radio) {
+    background-color: $bg-color;
+    width: $ancho;
+    height: $alto;
+    border-radius: $radio;
+}
