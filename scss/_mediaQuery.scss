@@ -215,12 +215,43 @@
     }
     // Main Preguntas Frecuentes
     .cuerpoFaqs {
+        .navegacionFaqsMovile {
+            display: none;
+        }
         .navegacionFaqs {
-            flex-direction: row;
+            @include propiedadesGenerales ($colorFondo, 80%, auto, 0rem);
+            display: flex;
             justify-content: space-between;
+            margin: 0 auto;
+            margin-bottom: 7rem;
+            padding-top: 7rem;
             .navegacionFaqs__logo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 15rem;
+                margin-bottom: 2.5rem;
+                transition: all 300ms ease;
                 &:last-child {
-                    margin-bottom: 2.5rem;
+                    margin-bottom: 0rem;
+                }
+                i {
+                    font-size: 6rem;
+                    color: $colorHover;
+                    margin-bottom: 1rem;
+                    transition: all 300ms ease;
+                }
+                a {
+                    font-family: $tipoFuentePrincipal;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    text-decoration: none;
+                    text-align: center;
+                    color: $colorPrincipal;
+                    transition: all 300ms ease;
+                }
+                &:hover i {
+                    transform: scale(1.1);
                 }
             }
         }

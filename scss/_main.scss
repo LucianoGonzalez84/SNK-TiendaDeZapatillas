@@ -308,44 +308,57 @@
     grid-area: main;
     margin-top: 0;
     margin-bottom: 7rem;
-    .navegacionFaqs {
-        @include propiedadesGenerales ($colorFondo, 80%, auto, 0rem);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .navegacionFaqsMovile {
+        margin: 0;
+        padding-top: 4rem;
         margin: 0 auto;
-        margin-bottom: 7rem;
-        padding-top: 7rem;
-        .navegacionFaqs__logo {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 15rem;
-            margin-bottom: 2.5rem;
-            transition: all 300ms ease;
-            &:last-child {
-                margin-bottom: 0rem;
-            }
-            i {
-                font-size: 6rem;
-                color: $colorHover;
-                margin-bottom: 1rem;
+        .carousel {
+            width: 30rem;
+            height: 20rem;
+            margin: 0 auto;
+            margin-bottom: 7rem;
+            text-align: center;
+            .navegacionFaqsMovile__logo{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 15rem;
+                margin: 0 auto;
+                margin-top: 2.5rem;
+                margin-bottom: 2.5rem;
                 transition: all 300ms ease;
+                &:last-child {
+                    margin-bottom: 0rem;
+                }
+                i {
+                    font-size: 6rem;
+                    color: $colorHover;
+                    margin-bottom: 1rem;
+                    transition: all 300ms ease;
+                }
+                a {
+                    font-family: $tipoFuentePrincipal;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    text-decoration: none;
+                    text-align: center;
+                    color: $colorPrincipal;
+                    transition: all 300ms ease;
+                }
+                &:hover i {
+                    transform: scale(1.1);
+                }
             }
-            a {
-                font-family: $tipoFuentePrincipal;
-                font-size: 2rem;
-                font-weight: 700;
-                text-decoration: none;
-                text-align: center;
-                color: $colorPrincipal;
-                transition: all 300ms ease;
+            .carousel-control-prev {
+                transform: scale(1.3);
             }
-            &:hover i {
-                transform: scale(1.1);
+            .carousel-control-next {
+                transform: scale(1.3);
             }
         }
+    }
+    .navegacionFaqs {
+        display: none;
     }
     .preguntas {
         width: 95%;
