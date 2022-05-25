@@ -39,16 +39,11 @@ p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #ffffff;
-}
-
-.tituloDecoracion {
-  width: 65%;
-  height: auto;
-  margin: 0 auto;
 }
 
 .contenedorGrid {
@@ -238,7 +233,6 @@ body {
   color: #ffffff;
   -webkit-transform: scale(7);
           transform: scale(7);
-  margin-top: 0.5rem;
 }
 
 .navbar .nav-link {
@@ -248,6 +242,14 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.navbar .nav-link:hover {
+  color: #a67453 !important;
+}
+
+.navbar .activo {
+  color: #a67453 !important;
 }
 
 .buscador {
@@ -985,15 +987,19 @@ body {
   border-left: none;
   border-top: 0.15rem solid #ffffff;
   border-bottom: none;
-  height: 8rem;
+  height: auto;
   width: 95%;
-  padding: 1rem 0 1rem 0;
+  padding: 2.5rem 0 2.5rem 0;
 }
 
 .pie .redes i {
   color: #ffffff;
   font-size: 1.8rem;
-  margin-top: 0.5rem;
+}
+
+.pie .navFooter {
+  height: auto;
+  padding: 2.5rem 0 2.5rem 0;
 }
 
 .pie .navFooter a {
@@ -1005,6 +1011,15 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   margin-bottom: 0.5rem;
+  padding: 0.25rem 0 0.25rem 0;
+}
+
+.pie .navFooter a:hover {
+  color: #a67453;
+}
+
+.pie .navFooter .activo {
+  color: #a67453;
 }
 
 .pie .copyright {
@@ -1012,9 +1027,9 @@ body {
   border-right: none;
   border-top: 0.15rem solid #ffffff;
   border-bottom: none;
-  height: 8rem;
+  height: auto;
   width: 95%;
-  padding: 1rem 0 1rem 0;
+  padding: 2.5rem 0 1rem 0;
 }
 
 .subrayadoEnlace {
@@ -1035,7 +1050,7 @@ body {
   left: 51%;
   right: 51%;
   bottom: 0;
-  background: #ffffff;
+  background: #a67453;
   height: 3px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -1251,7 +1266,7 @@ body {
     margin-bottom: 2.5rem;
   }
   .cuerpoNosotros .infoClientes .clientesFelices .opinion:last-child {
-    margin-bottom: 0;
+    margin-bottom: 2.5rem;
   }
   .cuerpoNosotros .infoClientes .clientesFelices .opinion img {
     width: 8rem;
@@ -1369,12 +1384,23 @@ body {
     border-left: none;
     border-top: none;
     border-bottom: none;
+    height: 8rem;
+    padding-top: 2rem;
+  }
+  .pie .navFooter {
+    height: 8rem;
+    padding-top: 2.5rem;
+  }
+  .pie .navFooter a {
+    padding: 0;
   }
   .pie .copyright {
     border-left: 0.15rem solid #ffffff;
     border-right: none;
     border-top: none;
     border-bottom: none;
+    height: 8rem;
+    padding-top: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

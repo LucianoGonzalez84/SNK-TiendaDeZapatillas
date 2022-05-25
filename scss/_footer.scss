@@ -1,23 +1,29 @@
+// Footer
 .pie {
     grid-area: footer;
     background-color: $colorPrincipal;
     color: $colorFondo;
     font-family: $tipoFuentePrincipal;
+
     .redes {
         border-right: none;
         border-left: none;
         border-top: 0.15rem solid $colorFondo;
         border-bottom: none;
-        height: 8rem;
+        height: auto;
         width: 95%;
-        padding: 1rem 0 1rem 0;
+        padding: 2.5rem 0 2.5rem 0;
+
         i {
             color: $colorFondo;
             font-size: 1.8rem;
-            margin-top: 0.5rem;
         }
     }
+
     .navFooter {
+        height: auto;
+        padding: 2.5rem 0 2.5rem 0;
+
         a {
             display: inline-block;
             color: $colorFondo;
@@ -27,46 +33,23 @@
             text-transform: uppercase;
             text-decoration: none;
             margin-bottom: 0.5rem;
+            padding: 0.25rem 0 0.25rem 0;
+            &:hover {
+                color: $colorHover;
+            }
+        }
+        .activo {
+            color: $colorHover;
         }
     }
+    
     .copyright {
         border-left: none;
         border-right: none;
         border-top: 0.15rem solid $colorFondo;
         border-bottom: none;
-        height: 8rem;
+        height: auto;
         width: 95%;
-        padding: 1rem 0 1rem 0;
+        padding: 2.5rem 0 1rem 0;
     }
 }
-
-
-// .pie {
-//     margin: 0 auto;
-//     .redes {
-//         border-right: none;
-//         border-top: 0.15rem solid $colorFondo;
-//         height: auto;
-//         padding: 2rem 0;
-//     }
-//     .navFooter {
-//         display: flex;
-//         justify-content: center;
-//         text-align: center;
-//         height: auto;
-//         padding: 1rem 0;
-//         a {
-//             margin: 0.5rem auto;
-//         }
-//     }
-//     .copyright {
-//         height: auto;
-//         padding-top: 2rem;
-//         padding-bottom: 1rem;
-//         border-left: none;
-//         border-top: 0.15rem solid $colorFondo;
-//     }
-// }
-
-
-

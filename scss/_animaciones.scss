@@ -16,7 +16,7 @@
     left: 51%;
     right: 51%;
     bottom: 0;
-    background: $colorFondo;
+    background: $colorHover;
     height: 3px;
     transition-property: left, right;
     transition-duration: 0.3s;
@@ -55,6 +55,7 @@
 //Agrandar tarjeta
 .agrandarTarjeta {
     transition: all 300ms ease;
+
     &:hover {
         transform: translateY(-0.4rem);
         box-shadow: 0rem 0rem 3rem $colorSombra;

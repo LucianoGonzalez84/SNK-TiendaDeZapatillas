@@ -8,7 +8,7 @@
     transition: map-get($boton, transicion);
     padding: map-get($boton, padding);
     color: $colorPrincipal;
-    
+
     &:hover {
         background: $colorPrincipal;
         color: $colorFondo;
@@ -26,10 +26,12 @@
     font-weight: 500;
     color: $colorPrincipal;
     border-radius: 0;
+
     &:hover {
         background: $colorPrincipal;
         color: $colorFondo;
     }
+
     i {
         transform: scale(1.5);
         margin-right: 1rem;

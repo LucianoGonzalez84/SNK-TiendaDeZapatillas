@@ -27,7 +27,6 @@
         h1 {
             top: 33rem;
         }
-
     }
 }
 
@@ -58,11 +57,9 @@
         margin-right: 1.5rem;
         width: 4.5rem;
         height: 4.5rem;
-
         .fa-bars {
             color: $colorFondo;
             transform: scale(7);
-            margin-top: 0.5rem;
         }
     }
 
@@ -73,6 +70,12 @@
         font-weight: 600;
         text-transform: uppercase;
         text-decoration: none;
+        &:hover {
+            color: $colorHover !important;
+        }
+    }
+    .activo {
+        color: $colorHover !important; 
     }
 }
 

@@ -3,14 +3,10 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: $colorFondo;
 }
 
-.tituloDecoracion {
-    width: 65%;
-    height: auto;
-    margin: 0 auto;
-}

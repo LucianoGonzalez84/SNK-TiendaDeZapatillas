@@ -2,12 +2,14 @@
 .cuerpoIndex {
     margin-top: 7rem;
     margin-bottom: 7rem;
+
     .porqueSNK__item {
         i {
             font-size: 6rem;
             color: $colorHover;
         }
     }
+
     .videoIndex {
         video {
             border-radius: 1rem;
@@ -15,14 +17,18 @@
             width: 100%;
         }
     }
+
     .contenedorMarcas {
         @include propiedadesGenerales ($colorFondoDos, 100%, auto, 0.5rem);
         padding: 5rem 0;
-        .contenedorTitulo{
+
+        .contenedorTitulo {
             margin-bottom: 2.5rem;
         }
+
         .contenedorMarcas__logo {
             margin: 0;
+
             img {
                 width: 7rem;
                 height: 7rem;
@@ -30,34 +36,41 @@
         }
     }
 }
+
 // Main Tienda
 .cuerpoTienda {
     grid-area: main;
     margin-top: 7rem;
     margin-bottom: 7rem;
+
     .infoTienda {
         @include propiedadesGenerales ($colorFondoDos, 100%, auto, 0.5rem);
         padding: 5rem 0;
         text-align: center;
         margin-bottom: 5rem;
-        .contenedorTitulo{
+
+        .contenedorTitulo {
             margin-bottom: 2.5rem;
         }
+
         p {
             width: 90%;
             margin: 0 auto;
         }
     }
+
     .tituloLogo {
         text-align: center;
         margin-top: 1rem;
+
         img {
             width: 4rem;
             height: 4rem;
         }
     }
-    
+
 }
+
 .contenedorZapatillas {
     display: flex;
     flex-direction: column;
@@ -66,23 +79,27 @@
     height: auto;
     margin: 0 auto;
     margin-top: 5rem;
-    .producto{
+
+    .producto {
         @include propiedadesGenerales ($colorFondo, 30rem, 40rem, 0rem);
         padding: 0;
         box-shadow: 0rem 0rem 2rem $colorSombra;
         border: 1px solid $colorBordeProducto;
         margin-bottom: 2.5rem;
+
         .producto__img {
             text-align: center;
             position: relative;
             overflow: hidden;
             padding-top: 3rem;
+
             .iconoCorazon {
                 position: absolute;
                 top: 0rem;
                 right: 2rem;
                 font-size: 2.6rem;
             }
+
             .botones {
                 display: flex;
                 width: 100%;
@@ -91,17 +108,21 @@
                 bottom: -100%;
                 transition: all 0.3s ease-in-out;
             }
+
             &:hover .botones {
                 bottom: 0;
             }
         }
-        .producto__info{
+
+        .producto__info {
             padding: 1rem 0 0 1rem;
+
             .tipoProducto {
                 font-family: $tipoFuentePrincipal;
                 font-weight: 400;
                 font-size: 1.4rem;
             }
+
             .nombreProducto {
                 display: block;
                 padding: 0.5rem 0;
@@ -111,19 +132,23 @@
                 font-weight: 600;
                 text-decoration: none;
                 transition: all 0.3s ease-in-out;
+
                 &:hover {
                     color: $colorHover;
                 }
             }
+
             .precioProducto {
                 font-family: $tipoFuentePrincipal;
                 font-size: 1.6rem;
             }
+
             .calificacion {
                 display: flex;
                 margin: 0.5rem 0 1.5rem 0;
                 font-family: $tipoFuentePrincipal;
                 font-size: 2.2rem;
+
                 .fa-star {
                     font-size: 1.2rem;
                 }
@@ -131,15 +156,19 @@
         }
     }
 }
+
 .contenedorZapatillasUno {
     margin-top: 0.5rem;
 }
+
 .pagination {
     display: flex;
     justify-content: center;
     margin-top: 5rem;
+
     .page-item {
         width: 2.5rem;
+
         .page-link {
             background-color: $colorFondo;
             text-align: center;
@@ -147,31 +176,37 @@
             font-size: 1.4rem;
             font-weight: 500;
             border: 0.1rem solid $colorPrincipal;
+
             &:hover {
                 background-color: $colorPrincipal;
                 color: $colorFondo;
             }
         }
     }
-    .page-item:last-child{
+
+    .page-item:last-child {
         margin-left: 0.5rem;
         width: 10rem;
         text-align: center;
     }
-    .page-item:first-child{
+
+    .page-item:first-child {
         margin-right: 0.5rem;
         width: 10rem;
         text-align: center;
     }
-    .disabled{
+
+    .disabled {
         opacity: 40%;
     }
 }
+
 //Main Nosotros
 .cuerpoNosotros {
     grid-area: main;
     margin-top: 7rem;
     margin-bottom: 7rem;
+
     .nosotros {
         display: flex;
         flex-direction: column;
@@ -179,20 +214,24 @@
         width: 95%;
         margin: 0 auto;
         margin-bottom: 7rem;
+
         .nosotros__info {
             display: flex;
             flex-direction: column;
             text-align: center;
             margin-bottom: 7rem;
+
             &:last-child {
                 margin-bottom: 0;
             }
+
             .informacion {
                 h3 {
                     margin-bottom: 1.5rem;
                     color: $colorHover;
                 }
             }
+
             .imagen {
                 img {
                     border-radius: 2rem;
@@ -203,20 +242,25 @@
             }
         }
     }
+
     .infoClientes {
         @include propiedadesGenerales ($colorFondoDos, 100%, auto, 0.5rem);
         padding: 5rem 0;
         text-align: center;
         margin-bottom: 5rem;
-        .contenedorTitulo{
+
+        .contenedorTitulo {
             margin-bottom: 5rem;
         }
+
         .clientesFelicesMovile {
             margin: 0 auto;
+
             .carousel {
                 width: auto;
                 height: 27rem;
                 margin-bottom: 0rem;
+
                 .opinion {
                     width: 25rem;
                     height: 27rem;
@@ -225,11 +269,13 @@
                     align-items: center;
                     text-align: center;
                     margin: 0 auto;
-                    
+
                     margin-bottom: 2.5rem;
+
                     &:last-child {
                         margin-bottom: 0;
                     }
+
                     img {
                         width: 8rem;
                         height: 8rem;
@@ -237,8 +283,10 @@
                         overflow: hidden;
                         margin-bottom: 1.5rem;
                     }
+
                     p {
                         font-size: 1.3rem;
+
                         span {
                             font-size: 1.4rem;
                             font-weight: 800;
@@ -247,60 +295,70 @@
                 }
             }
         }
+
         .clientesFelices {
             display: none;
-            
+
         }
     }
+
     .infoUbicacion {
         @include propiedadesGenerales ($colorFondo, 100%, auto, 0);
         text-align: center;
-        .contenedorTitulo{
+
+        .contenedorTitulo {
             margin-bottom: 2.5rem;
         }
+
         p {
             width: 90%;
             margin: 0 auto;
         }
+
         .ubicacion {
             display: flex;
             flex-direction: column;
             width: 90%;
             margin: 0 auto;
-            
+
             .ubicacion__local {
                 .local {
-                    width: 100%;               
+                    width: 100%;
                     object-fit: contain;
-                    
+
                 }
             }
+
             .ubicacion__mapa {
                 width: 100%;
                 height: 30rem;
                 box-shadow: 0rem 0rem 2rem $colorSombra;
                 border: 1px solid $colorBordeProducto;
-                
+
             }
         }
     }
 }
+
 // Main Preguntas Frecuentes
 .cuerpoFaqs {
     grid-area: main;
     margin-top: 0;
     margin-bottom: 7rem;
+
     .navegacionFaqsMovile {
         padding-top: 3rem;
         margin: 0 auto;
         margin-bottom: 7rem;
+
         .carousel {
             width: 30rem;
             height: 20rem;
             margin: 0 auto;
             margin-bottom: 7rem;
             text-align: center;
-            .navegacionFaqsMovile__logo{
+
+            .navegacionFaqsMovile__logo {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -309,15 +367,18 @@
                 margin-top: 2.5rem;
                 margin-bottom: 2.5rem;
                 transition: all 300ms ease;
+
                 &:last-child {
                     margin-bottom: 0rem;
                 }
+
                 i {
                     font-size: 6rem;
                     color: $colorHover;
                     margin-bottom: 1rem;
                     transition: all 300ms ease;
                 }
+
                 a {
                     font-family: $tipoFuentePrincipal;
                     font-size: 2rem;
@@ -327,38 +388,48 @@
                     color: $colorPrincipal;
                     transition: all 300ms ease;
                 }
+
                 &:hover i {
                     transform: scale(1.1);
                 }
             }
+
             .carousel-control-prev {
                 transform: scale(1.3);
             }
+
             .carousel-control-next {
                 transform: scale(1.3);
             }
         }
     }
+
     .navegacionFaqs {
         display: none;
     }
+
     .preguntas {
         width: 95%;
         margin: 0 auto;
         margin-bottom: 5rem;
+
         &:last-child {
             margin-bottom: 0;
         }
+
         .preguntas__respuesta {
             margin-bottom: 2.5rem;
             margin-top: 2.5rem;
+
             p {
                 text-align: justify;
                 margin-top: 1rem;
             }
         }
+
         .preguntas__tabla {
             width: 100%;
+
             table,
             th,
             td {
@@ -372,14 +443,14 @@
                 padding: 0.20rem;
                 text-align: center;
             }
-            
+
             td {
                 color: $colorPrincipal;
                 text-align: center;
                 font-weight: 500;
                 background-color: $colorFondo;
             }
-            
+
             th {
                 color: $colorPrincipal;
                 text-align: center;
@@ -390,30 +461,37 @@
         }
     }
 }
+
 // Main Contacto
 .cuerpoContacto {
     grid-area: main;
     margin-top: 7rem;
     margin-bottom: 7rem;
+
     .infoContacto {
         @include propiedadesGenerales ($colorFondoDos, 100%, auto, 0.5rem);
         padding: 5rem 0;
         text-align: center;
         margin-bottom: 5rem;
-        .contenedorTitulo{
+
+        .contenedorTitulo {
             margin-bottom: 2.5rem;
         }
+
         p {
             width: 90%;
             margin: 0 auto;
         }
     }
+
     .formulario {
         width: 95%;
         margin: 0 auto;
+
         .campo {
             display: flex;
             flex-direction: column;
+
             .campo__texto {
                 font-family: $tipoFuentePrincipal;
                 font-size: 1.8rem;
@@ -421,6 +499,7 @@
                 color: $colorPrincipal;
                 margin-bottom: 0.8rem;
             }
+
             .campo__area {
                 font-family: $tipoFuentePrincipal;
                 font-size: 1.7rem;
@@ -434,31 +513,37 @@
                 border-right: none;
             }
         }
+
         textarea {
             resize: none;
             height: 20rem;
         }
+
         .checkbox {
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-bottom: 5rem;
+
             .checkbox__texto {
                 font-family: $tipoFuentePrincipal;
                 font-size: 1.8rem;
                 font-weight: 500;
                 color: $colorPrincipal;
             }
+
             .checkbox__tilde {
                 transform: scale(1.3);
             }
         }
+
         .contenedorBoton {
             display: flex;
             justify-content: center;
         }
     }
 }
+
 // Boton Whatsapp
 .contenedorWhatsapp {
     background-color: #2e6329;
@@ -470,48 +555,56 @@
     right: 1.2rem;
     padding: .8rem;
     transition: 0.3s ease;
+
     &:hover {
         transform: scale(1.1);
     }
+
     .botonWhatsapp {
         height: 2.5rem;
     }
 }
+
 // Decoracion Titulos
-.contenedorTitulo{
+.contenedorTitulo {
     width: 95%;
     margin: 0 auto;
     display: flex;
-    .titulo{
+
+    .titulo {
         text-align: center;
         margin: 0 auto;
         flex: 60%;
     }
-    .tituloDos{
+
+    .tituloDos {
         text-align: center;
         margin: 0 auto;
         flex: 20%;
     }
+
     .antes,
     .despues {
         flex: 25%;
     }
+
     .antesDos,
     .despuesDos {
         flex: 35%;
     }
-    .linea{
+
+    .linea {
         position: relative;
         height: 0.10rem;
         top: 45%;
         background-color: $colorPrincipal;
     }
-    .linea__uno{
+
+    .linea__uno {
         margin-right: 2rem;
     }
-    .linea__dos{
+
+    .linea__dos {
         margin-left: 2rem;
     }
 }
-
-
