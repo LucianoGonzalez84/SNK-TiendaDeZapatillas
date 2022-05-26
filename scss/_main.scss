@@ -178,8 +178,7 @@
             border: 0.1rem solid $colorPrincipal;
 
             &:hover {
-                background-color: $colorPrincipal;
-                color: $colorFondo;
+                background-color: $colorSombra;
             }
         }
     }
@@ -197,7 +196,12 @@
     }
 
     .disabled {
-        opacity: 40%;
+        opacity: 25%;
+    }
+    
+    .activoPagination {
+        color: $colorFondo!important;
+        background-color: $colorPrincipal!important;
     }
 }
 
