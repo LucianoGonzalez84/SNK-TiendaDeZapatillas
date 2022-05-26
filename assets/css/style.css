@@ -1,3 +1,4 @@
+/* Variables */
 h1 {
   font-family: "Roboto Serif", serif;
   color: #ffffff;
@@ -29,6 +30,7 @@ p {
   font-size: 1.5rem;
   font-weight: 500; }
 
+/* Reseteo */
 * {
   padding: 0;
   margin: 0;
@@ -39,12 +41,16 @@ p {
 body {
   background-color: #ffffff; }
 
-.contenedorGrid {
+/* Grid */
+  .contenedorGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 40rem auto auto;
-  grid-template-areas: "head head" "main   main" "footer footer"; }
+  grid-template-areas: "head head"
+                       "main   main"
+                       "footer footer"; }
 
+/* Botones */
 .botonContacto, .botonTienda, .botonBuscador, .botonArriba {
   background-color: #ffffff;
   width: 13rem;
@@ -109,6 +115,7 @@ body {
   .botonArriba:hover i {
     color: #ffffff; }
 
+/* Header     */
 .headerIndex {
   height: 100vh;
   background-position: center;
@@ -177,6 +184,7 @@ body {
     padding-right: 0.4rem !important;
     margin-right: 0.3rem !important; }
 
+/* Main Index */
 .cuerpoIndex {
   margin-top: 7rem;
   margin-bottom: 7rem; }
@@ -201,6 +209,7 @@ body {
         width: 7rem;
         height: 7rem; }
 
+/* Main Tienda */
 .cuerpoTienda {
   grid-area: main;
   margin-top: 7rem;
@@ -321,6 +330,7 @@ body {
     color: #ffffff !important;
     background-color: #000000 !important; }
 
+/* Main Nosotros */
 .cuerpoNosotros {
   grid-area: main;
   margin-top: 7rem;
@@ -412,6 +422,7 @@ body {
         box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.2);
         border: 1px solid #dbdbdb; }
 
+/* Main Preguntas Frecuentes */
 .cuerpoFaqs {
   grid-area: main;
   margin-top: 0;
@@ -496,6 +507,7 @@ body {
         background-color: #000000;
         color: #ffffff; }
 
+/* Main Contacto */
 .cuerpoContacto {
   grid-area: main;
   margin-top: 7rem;
@@ -555,6 +567,7 @@ body {
       display: flex;
       justify-content: center; }
 
+/* Icono Whatsapp */
 .contenedorWhatsapp {
   background-color: #2e6329;
   position: fixed;
@@ -570,6 +583,7 @@ body {
   .contenedorWhatsapp .botonWhatsapp {
     height: 2.5rem; }
 
+/* Decoración Titulos */
 .contenedorTitulo {
   width: 95%;
   margin: 0 auto;
@@ -598,6 +612,7 @@ body {
   .contenedorTitulo .linea__dos {
     margin-left: 2rem; }
 
+/* Footer */
 .pie {
   grid-area: footer;
   background-color: #000000;
@@ -640,6 +655,7 @@ body {
     width: 95%;
     padding: 2.5rem 0 1rem 0; }
 
+/* Animaciones */
 .subrayadoEnlace {
   display: inline-block;
   vertical-align: middle;
@@ -702,11 +718,14 @@ body {
   .efectoIcono:hover {
     transform: scale(1.2); }
 
+/* Media Query     */
 @media (min-width: 991px) {
   .contenedorGrid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 40rem auto 10rem;
-    grid-template-areas: "head head head head" "main   main   main   main" "footer footer footer footer"; }
+    grid-template-areas: "head head head head"
+                         "main   main   main   main"
+                         "footer footer footer footer"; }
   .buscador {
     width: 18rem; }
   .headerPaginasFaqs .contenedorH1 h1 {
